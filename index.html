@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pahasara Fernando - Full-Stack Developer specializing in C# and .NET" />
+    <title>Pahasara Fernando - Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#home" class="logo">Pahasara</a>
+      <nav id="navbar">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span class="highlight">Pahasara Fernando</span></h1>
+        <h3 class="typing-text">I'm a <span id="typed-text"></span></h3>
+        <p>
+          Full-stack developer specializing in C# and modern .NET. I build secure REST APIs, authentication systems, and
+          database-driven applications with clean architecture. Strong expertise in backend development with proficiency
+          in React and TypeScript for full-stack solutions.
+        </p>
+
+        <div class="cta-group" style="margin-bottom: 2rem">
+          <a href="Pahasara_Fernando_CV.pdf" download class="btn-primary btn-solid-cta">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/Pahasara" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/pahasara-fernando-0116412a8/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://learn.microsoft.com/en-us/users/pahasara/achievements"
+            target="_blank"
+            aria-label="Microsoft Learn"
+          >
+            <i class="fas fa-certificate"></i>
+          </a>
+          <a href="mailto:pahasaradev@proton.me" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="images/profile.jpg" alt="Pahasara Fernando" />
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-project="purenote">
+            <div class="project-image">
+              <img src="images/purenote.png" alt="PureNote Project" />
+              <div class="project-overlay">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>PureNote</h3>
+              <p>
+                Full-stack encrypted diary and note-taking platform with JWT authentication, PostgreSQL backend, and
+                React TypeScript frontend.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">ASP.NET Core 10</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">EF Core</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pahasara/PureNote" target="_blank" class="btn-primary">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('purenote', 'details')">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('purenote', 'gallery')">
+                  <i class="fas fa-images"></i> Showcase
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="inventory">
+            <div class="project-image">
+              <img src="images/inventory.png" alt="Product Inventory" />
+              <div class="project-overlay">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Product Inventory</h3>
+              <p>
+                Full-stack inventory management system with product CRUD, image handling, authentication, and React
+                frontend integration.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">ASP.NET Core 9</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">EF Core</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pahasara/Product-Inventory" target="_blank" class="btn-primary">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('inventory', 'details')">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('inventory', 'gallery')">
+                  <i class="fas fa-images"></i> Showcase
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="nextstep">
+            <div class="project-image">
+              <img src="images/nextstep.png" alt="NextStep Platform" />
+              <div class="project-overlay">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>NextStep</h3>
+              <p>
+                Backend developer for ICT career pathway platform. Built authentication system, database schema, and
+                RESTful APIs for team project.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">ASP.NET Core 9</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">EF Core</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Swagger</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Team-BISHOP/nextstep" target="_blank" class="btn-primary">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('nextstep', 'details')">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('nextstep', 'gallery')">
+                  <i class="fas fa-images"></i> Showcase
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="hyprdots">
+            <div class="project-image">
+              <img src="images/hyprdots.png" alt="HyprDots Configuration" />
+              <div class="project-overlay">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>HyprDots</h3>
+              <p>
+                Comprehensive Arch Linux Hyprland configuration with automation scripts, custom themes, and complete
+                documentation.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Arch Linux</span>
+                <span class="tech-tag">Hyprland</span>
+                <span class="tech-tag">Bash</span>
+                <span class="tech-tag">systemd</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Pahasara/HyprDots" target="_blank" class="btn-primary">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('hyprdots', 'details')">
+                  <i class="fas fa-info-circle"></i> Details
+                </button>
+                <button type="button" class="btn-details btn-primary" onclick="openModal('hyprdots', 'gallery')">
+                  <i class="fas fa-images"></i> Showcase
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem">
+          <a href="https://github.com/Pahasara?tab=repositories" target="_blank" class="btn-primary">
+            <i class="fab fa-github"></i> View More Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-list">
+              <span class="skill-item">ASP.NET Core</span>
+              <span class="skill-item">Entity Framework Core</span>
+              <span class="skill-item">REST API Design</span>
+              <span class="skill-item">JWT Authentication</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-list">
+              <span class="skill-item">React</span>
+              <span class="skill-item">TypeScript</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">HTML/CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-list">
+              <span class="skill-item">PostgreSQL</span>
+              <span class="skill-item">MySQL</span>
+              <span class="skill-item">SQL Server</span>
+              <span class="skill-item">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Systems</h3>
+            <div class="skill-list">
+              <span class="skill-item">Git & GitHub</span>
+              <span class="skill-item">Linux (Arch)</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">Shell Scripting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="container">
+        <div class="education-content">
+          <h2 class="section-title">Education</h2>
+          <h3>Bachelor of ICT (BICT)</h3>
+          <h4>University of Sri Jayewardenepura</h4>
+          <p class="year">2023 – Present (3rd Year, Final Semester)</p>
+          <p>
+            Focused on software engineering, operating systems, and database systems. Completed extensive coursework in
+            backend development, systems programming, and full-stack web development.
+          </p>
+
+          <div class="certifications">
+            <h4>Certifications & Courses</h4>
+            <div class="cert-item">freeCodeCamp - Foundational C# Certification</div>
+            <div class="cert-item">Microsoft Learn - ASP.NET Core Web API Development</div>
+            <div class="cert-item">Microsoft Learn - ASP.NET Core Web Application Development</div>
+            <div class="cert-item">HackTheBox - Linux Fundamentals</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-alt" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            Full-stack developer specializing in C# and .NET with a passion for systems programming and clean
+            architecture. Currently pursuing BICT at University of Sri Jayewardenepura, where I dive deep into operating
+            systems and low-level programming. I build complete full-stack applications with secure REST APIs and modern
+            frontend frameworks.
+          </p>
+
+          <p>
+            I enjoy working close to the system layer, experimenting with Linux environments, and understanding how
+            tools work under the hood. My expertise spans backend development—building robust APIs, designing databases,
+            and implementing secure authentication—to frontend integration with React and TypeScript.
+          </p>
+
+          <p>My approach: understand systems deeply, write clean code, build end-to-end solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <p>
+            I'm currently looking for full-stack or backend developer internship opportunities. Feel free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:pahasaradev@proton.me" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/Pahasara" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/pahasara-fernando-0116412a8/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Pahasara Fernando. All rights reserved.</p>
+    </footer>
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" aria-label="Close Modal">&times;</span>
+        <div id="modal-body">
+          <div id="modal-gallery"></div>
+          <div id="modal-details"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
