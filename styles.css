@@ -91,6 +91,21 @@ header {
   display: flex;
   align-items: center;
 }
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.logo-brand {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--border);
+}
 .logo-img {
   height: 38px;
   width: 38px;
