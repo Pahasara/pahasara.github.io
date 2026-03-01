@@ -61,9 +61,9 @@ const projectDetails = {
     role: "Full-Stack Developer (Solo Project)",
     github: "https://github.com/DvNET-Systems/StockHub",
     images: [
-      "images/stockhub-screen1.png",
-      "images/stockhub-screen2.png",
-      "images/stockhub-screen3.png",
+      "images/stockhub-screen1.jpg",
+      "images/stockhub-screen2.jpg",
+      "images/stockhub-screen3.jpg",
     ],
   },
   purenote: {
@@ -85,9 +85,9 @@ const projectDetails = {
     role: "Full-Stack Developer (Solo Project)",
     github: "https://github.com/Pahasara/PureNote",
     images: [
-      "images/purenote-screen1.png",
-      "images/purenote-screen2.png",
-      "images/purenote-screen3.png",
+      "images/purenote-screen1.jpg",
+      "images/purenote-screen2.jpg",
+      "images/purenote-screen3.jpg",
     ],
   },
   nextstep: {
@@ -108,9 +108,9 @@ const projectDetails = {
     role: "Backend Developer (Team Project — Team BISHOP)",
     github: "https://github.com/Team-BISHOP/nextstep",
     images: [
-      "images/nextstep-screen1.png",
-      "images/nextstep-screen2.png",
-      "images/nextstep-screen3.png",
+      "images/nextstep-screen1.jpg",
+      "images/nextstep-screen2.jpg",
+      "images/nextstep-screen3.jpg",
     ],
   },
   hyprdots: {
@@ -133,9 +133,9 @@ const projectDetails = {
     role: "Systems Administrator & Documentation",
     github: "https://github.com/Pahasara/HyprDots",
     images: [
-      "images/hyprdots-screen1.png",
-      "images/hyprdots-screen2.png",
-      "images/hyprdots-screen3.png",
+      "images/hyprdots-screen1.jpg",
+      "images/hyprdots-screen2.jpg",
+      "images/hyprdots-screen3.jpg",
     ],
   },
 };
